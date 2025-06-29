@@ -1,56 +1,60 @@
-import _0x457384 from 'fs';
-import _0xa95cbe from 'path';
-import _0x35b30c from 'axios';
-import _0x3b8727 from 'unzipper';
+import fs from 'fs';
+import path from 'path';
+import axios from 'axios';
+import unzipper from 'unzipper';
 import { fileURLToPath } from 'url';
 import { spawn } from 'child_process';
-import _0x3ca4c0 from 'chalk';
-var _0x3g1b = 14;
+import chalk from 'chalk';
+
 const __filename = fileURLToPath(import.meta.url);
-_0x3g1b = 13;
-var _0x8f5e = 14;
-const __dirname = _0xa95cbe.dirname(__filename);
-_0x8f5e = 3;
-var _0xf9gbg = 7;
-const TEMP_DIR = _0xa95cbe.join(__dirname, ".botx_temp");
-_0xf9gbg = 0;
-const EXTRACT_DIR = _0xa95cbe.join(TEMP_DIR, "l-main");
+const __dirname = path.dirname(__filename);
+
+// Fix: Correct temp and extracted directory names
+const TEMP_DIR = path.join(__dirname, ".botx_temp");
+const EXTRACT_DIR = path.join(TEMP_DIR, "TERROR-XMD--main"); // GitHub zip default folder
+
 async function downloadAndExtract() {
-  if (_0x457384.existsSync(TEMP_DIR)) {
-    console.log(_0x3ca4c0.yellow("...redlof dlo gnivomeR".split('').reverse().join('')));
-    _0x457384.rmSync(TEMP_DIR, {
-      'recursive': true,
-      'force': true
+  if (fs.existsSync(TEMP_DIR)) {
+    console.log(chalk.yellow("Removing old folder..."));
+    fs.rmSync(TEMP_DIR, {
+      recursive: true,
+      force: true
     });
   }
-  _0x457384.mkdirSync(TEMP_DIR, {
-    'recursive': true
+
+  fs.mkdirSync(TEMP_DIR, { recursive: true });
+
+  console.log(chalk.blue("Downloading code from GitHub..."));
+
+  const response = await axios({
+    url: "https://github.com/Russian-mafia1/TERROR-XMD-/archive/refs/heads/main.zip",
+    method: "GET",
+    responseType: "stream"
   });
-  console.log(_0x3ca4c0.blue("...buHtiG morf edoc gnidaolnwoD".split('').reverse().join('')));
-  const _0x5a05a7 = await _0x35b30c({
-    'url': "https://github.com/Russian-mafia1/TERROR-XMD-/archive/refs/heads/main.zip",
-    'method': 'GET',
-    'responseType': 'stream'
+
+  await new Promise((resolve, reject) => {
+    response.data
+      .pipe(unzipper.Extract({ path: TEMP_DIR }))
+      .on("close", resolve)
+      .on("error", reject);
   });
-  await new Promise((_0xa7048b, _0xf4a9f8) => {
-    _0x5a05a7.data.pipe(_0x3b8727.Extract({
-      'path': TEMP_DIR
-    })).on("esolc".split('').reverse().join(''), _0xa7048b).on("rorre".split('').reverse().join(''), _0xf4a9f8);
-  });
-  console.log(_0x3ca4c0.green("!etelpmoc noitcartxE".split('').reverse().join('')));
+
+  console.log(chalk.green("Extraction complete!"));
 }
+
 async function startBot() {
-  console.log(_0x3ca4c0.cyan("Starting the bot..."));
-  var _0x1c0d78 = 12;
-  const _0xb5d586 = spawn("node", [_0xa95cbe.join(EXTRACT_DIR, "sj.xedni".split('').reverse().join(''))], {
-    'stdio': "inherit",
-    'env': process.env
+  console.log(chalk.cyan("Starting the bot..."));
+
+  const child = spawn("node", [path.join(EXTRACT_DIR, "index.js")], {
+    stdio: "inherit",
+    env: process.env
   });
-  _0x1c0d78 = 1;
-  _0xb5d586.on("close", _0x10e5ae => {
-    console.log(_0x3ca4c0.red("Bot exited with code " + _0x10e5ae));
+
+  child.on("close", (code) => {
+    console.log(chalk.red("Bot exited with code " + code));
   });
 }
+
 (async () => {
   await downloadAndExtract();
   await startBot();
