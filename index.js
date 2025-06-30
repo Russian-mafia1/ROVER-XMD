@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 
 // Fix: Correct temp and extracted directory names
 const TEMP_DIR = path.join(__dirname, ".botx_temp");
-const EXTRACT_DIR = path.join(TEMP_DIR, "ROVER-XMD--main"); // GitHub zip default folder
+const EXTRACT_DIR = path.join(TEMP_DIR, "ROVER-XMD-main"); // GitHub zip default folder
 
 async function downloadAndExtract() {
   if (fs.existsSync(TEMP_DIR)) {
@@ -44,6 +44,11 @@ async function downloadAndExtract() {
 
 async function startBot() {
   console.log(chalk.cyan("Starting the bot..."));
+
+  if (!fs.existsSync(path.join(EXTRACT_DIR, "index.js"))) {
+    console.log(chalk.red(`index.js not found in ${EXTRACT_DIR}`));
+    return;
+  }
 
   const child = spawn("node", [path.join(EXTRACT_DIR, "index.js")], {
     stdio: "inherit",
