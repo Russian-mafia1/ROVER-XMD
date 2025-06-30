@@ -37,13 +37,23 @@ href="https://github.com/Russian-mafia1/TERROR-XMD/graphs/commit-activity"><img 
 
  [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=monospace-ExtraBold&color=blue&lines=𝗙𝗢𝗥𝗞+𝗔𝗡𝗗+𝗦𝗧𝗔𝗥+⭐+𝗥𝗘𝗣𝗢)](https://git.io/typing-svg)
 
- 
+ ## ⭐ Fork the Repository
+
+Click the button below to fork the repository and get your own copy:
+
+[![FORK REPO](https://img.shields.io/badge/FORK%20REPO-Click%20Here-007ACC?style=for-the-badge&logo=github)](https://github.com/Conway-eng/TERROR-XMD/fork)
+
   **⛓️‍💥 NEW SESSION WEB ADDED √**
   
   <a href='https://russian-mafia.onrender.com/' target="_blank">
     <img src='https://img.shields.io/badge/PAIR_CODE-FF0000?style=for-the-badge&logo=matrix&logoColor=white&labelColor=000000'/>
   </a></br>
+> **1. PAIR CODE SESSION ID**
 
+<a href='https://session3-one.vercel.app//' target="_blank">
+  <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-orange?style=for-the-badge&logo=opencv&logoColor=black'/>
+</a>
+<br> 
 
 ## _📡 DEPLOYMENT_
 
