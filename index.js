@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 
 // Fix: Correct temp and extracted directory names
 const TEMP_DIR = path.join(__dirname, ".botx_temp");
-const EXTRACT_DIR = path.join(TEMP_DIR, "TERROR-XMD--main"); // GitHub zip default folder
+const EXTRACT_DIR = path.join(TEMP_DIR, "ROVER-XMD--main"); // GitHub zip default folder
 
 async function downloadAndExtract() {
   if (fs.existsSync(TEMP_DIR)) {
@@ -27,7 +27,7 @@ async function downloadAndExtract() {
   console.log(chalk.blue("Downloading code from GitHub..."));
 
   const response = await axios({
-    url: "https://github.com/Russian-mafia1/TERROR-XMD-/archive/refs/heads/main.zip",
+    url: "https://github.com/Conway-eng/ROVER-XMD/archive/refs/heads/main.zip",
     method: "GET",
     responseType: "stream"
   });
