@@ -17,24 +17,6 @@
 ---------
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=3000&color=00FF00&background=000000&center=true&vCenter=true&width=600&lines=⚡+TERROR+XMD+BETTER+OPTION;🔥+The+Most+Powerful+WhatsApp+Bot;💻+developed+by+HACKLINK+TECH+INC;🚀+HACKLINK-XD-+Solutions;🌈+Fast+⚡+Secure+🔒+Reliable+✅" alt="Typing SVG">
 
-
-<p align="center">
-  <a href="https://github.com/Russian-mafia1/ROVER-XMD"><img title="Release" src="https://img.shields.io/badge/Release-beta%20v5-cyan.svg?style=for-the-badge&logo=aqua" /></a>
-</p>
-
-
-***BOT FEATURES ⤵️***
-
-| Menu ⁠➜ | Status Save + Send | Group | ChatBot | Downloading | Antidelete | Ai | Viewonce | Fun | Status Reply | Status Reacts | HeartReacts | Autoreacts | Call Rejecter 
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Work ➜ |✅|✅|✅|✅|✅|✅|✅|✅|✅|✅|✅|✅|✅|
-
-  
-<a
-href="https://github.com/Russian-mafia1/TERROR-XMD/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
-</p>
-<p align='center'>
-
  [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=monospace-ExtraBold&color=blue&lines=𝗙𝗢𝗥𝗞+𝗔𝗡𝗗+𝗦𝗧𝗔𝗥+⭐+𝗥𝗘𝗣𝗢)](https://git.io/typing-svg)
 
  ## ⭐ Fork the Repository
