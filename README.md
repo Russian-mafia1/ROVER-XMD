@@ -19,7 +19,7 @@
 
 
 <p align="center">
-  <a href="https://github.com/Russian-mafia1/TERROR-XMD-"><img title="Release" src="https://img.shields.io/badge/Release-beta%20v5-cyan.svg?style=for-the-badge&logo=aqua" /></a>
+  <a href="https://github.com/Russian-mafia1/ROVER-XMD"><img title="Release" src="https://img.shields.io/badge/Release-beta%20v5-cyan.svg?style=for-the-badge&logo=aqua" /></a>
 </p>
 
 
@@ -41,7 +41,7 @@ href="https://github.com/Russian-mafia1/TERROR-XMD/graphs/commit-activity"><img 
 
 Click the button below to fork the repository and get your own copy:
 
-[![FORK REPO](https://img.shields.io/badge/FORK%20REPO-Click%20Here-007ACC?style=for-the-badge&logo=github)](https://github.com/Conway-eng/TERROR-XMD/fork)
+[![FORK REPO](https://img.shields.io/badge/FORK%20REPO-Click%20Here-007ACC?style=for-the-badge&logo=github)](https://github.com/Russian-mafia1/ROVER-XMD/fork)
 
   **⛓️‍💥 NEW SESSION WEB ADDED √**
   
