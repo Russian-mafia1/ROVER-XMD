@@ -1,6 +1,7 @@
 {
   "name": "ROVER-XMD",
   "version": "1.0.0",
+  "type": "module",
   "description": "A WhatsApp Bot Created By HACKLINK TECH.INC",
   "main": "index.js",
   "scripts": {
@@ -48,7 +49,7 @@
     "sequelize": "^6.37.5",
     "sqlite3": "^5.1.7",
     "unzipper": "^0.10.14",
-     "vm": "^0.1.0",
+    "vm": "^0.1.0",
     "api-dylux":"1.8.5",
     "@mrnima/tiktok-downloader":"1.0.0",
     "@mrnima/facebook-downloader":"1.0.0",
